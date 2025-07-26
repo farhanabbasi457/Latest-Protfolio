@@ -2,7 +2,6 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import Pic from '../Pictures/User/farhan.jpeg';
-import About from '../Pictures/User/About.jpeg';
 import { FaGithub, FaLinkedin, FaPhone, FaInstagram, FaArrowDown } from 'react-icons/fa';
 
 const Hero = () => {
@@ -81,7 +80,6 @@ const Hero = () => {
               {/* Placeholder for image */}
               <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
                 <img src={Pic} alt='MF' className='z-20'/>
-                <img src={About} alt='MF' className='absolute top-[-40px] left-[-40px] z-10' />
               </div>
             </div>
           </motion.div>

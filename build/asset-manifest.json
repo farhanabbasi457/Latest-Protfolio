@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.949c3e79.js",
+    "main.js": "/static/js/main.d9ed79b2.js",
     "static/media/Fahan_Resume.pdf": "/static/media/Fahan_Resume.615917dbdf0f0c2741d1.pdf",
     "static/media/BookApp.jpg": "/static/media/BookApp.51291c7d08db6a231c5a.jpg",
     "static/media/Minitronix.jpg": "/static/media/Minitronix.da5202412ebce647872e.jpg",
@@ -11,9 +11,9 @@
     "static/media/farhan.jpg": "/static/media/farhan.8ffe6d9e169628cf0b0e.jpg",
     "static/media/FoodApp.jpg": "/static/media/FoodApp.aae23842230a038252d5.jpg",
     "index.html": "/index.html",
-    "main.949c3e79.js.map": "/static/js/main.949c3e79.js.map"
+    "main.d9ed79b2.js.map": "/static/js/main.d9ed79b2.js.map"
   },
   "entrypoints": [
-    "static/js/main.949c3e79.js"
+    "static/js/main.d9ed79b2.js"
   ]
 }

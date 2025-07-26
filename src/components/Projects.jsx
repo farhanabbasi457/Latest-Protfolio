@@ -17,7 +17,7 @@ const Projects = () => {
       description: 'Developed  a  real-time  lab  management  system  using  React  and  Node.įs,  adopted  by  10+  university  departments. ',
       tags: ['React.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Render'],
       github: '#',
-      live: 'https://uiitlabxperts.com/',
+      live: 'https://uiitlabxperts.shop/',
       image: UiitLabXperts
     },
     {

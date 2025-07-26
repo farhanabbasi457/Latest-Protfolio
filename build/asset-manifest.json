@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/js/main.af019322.js",
+    "static/media/Netflix.png": "/static/media/Netflix.d2ad3221560a917d5c4b.png",
+    "static/media/BookApp.png": "/static/media/BookApp.14a159f6896dca2cbd16.png",
+    "static/media/Minitronix.png": "/static/media/Minitronix.3a110dbcfb212081babd.png",
+    "static/media/farhan.jpeg": "/static/media/farhan.2d4e2b606f05625398c2.jpeg",
+    "static/media/BillingDesktopApp.png": "/static/media/BillingDesktopApp.2644bc8eaf672f7c570a.png",
+    "static/media/UIITLabXperts.png": "/static/media/UIITLabXperts.ca95a80899fd2aeb18be.png",
+    "static/media/Fahan_Resume.pdf": "/static/media/Fahan_Resume.615917dbdf0f0c2741d1.pdf",
+    "static/media/FoodApp.png": "/static/media/FoodApp.a17f1675b7c1cc1b9c4b.png",
+    "static/media/About.jpeg": "/static/media/About.79e2e0098448c8092765.jpeg",
+    "index.html": "/index.html",
+    "main.af019322.js.map": "/static/js/main.af019322.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.af019322.js"
+  ]
+}

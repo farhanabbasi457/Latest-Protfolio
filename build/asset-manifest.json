@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.d0b4f15a.js",
-    "static/media/Netflix.png": "/static/media/Netflix.d2ad3221560a917d5c4b.png",
-    "static/media/BookApp.png": "/static/media/BookApp.14a159f6896dca2cbd16.png",
-    "static/media/Minitronix.png": "/static/media/Minitronix.3a110dbcfb212081babd.png",
-    "static/media/farhan.jpeg": "/static/media/farhan.2d4e2b606f05625398c2.jpeg",
-    "static/media/BillingDesktopApp.png": "/static/media/BillingDesktopApp.2644bc8eaf672f7c570a.png",
-    "static/media/UIITLabXperts.png": "/static/media/UIITLabXperts.ca95a80899fd2aeb18be.png",
+    "main.js": "/static/js/main.949c3e79.js",
     "static/media/Fahan_Resume.pdf": "/static/media/Fahan_Resume.615917dbdf0f0c2741d1.pdf",
-    "static/media/FoodApp.png": "/static/media/FoodApp.a17f1675b7c1cc1b9c4b.png",
+    "static/media/BookApp.jpg": "/static/media/BookApp.51291c7d08db6a231c5a.jpg",
+    "static/media/Minitronix.jpg": "/static/media/Minitronix.da5202412ebce647872e.jpg",
+    "static/media/Netflix.jpg": "/static/media/Netflix.89ae9e2b4782f53150af.jpg",
+    "static/media/BillingDesktopApp.jpg": "/static/media/BillingDesktopApp.479c5a2098d1e5c7e409.jpg",
+    "static/media/UIITLabXperts.jpg": "/static/media/UIITLabXperts.f384e68d9b542bd9f5db.jpg",
     "static/media/About.jpeg": "/static/media/About.79e2e0098448c8092765.jpeg",
+    "static/media/farhan.jpg": "/static/media/farhan.8ffe6d9e169628cf0b0e.jpg",
+    "static/media/FoodApp.jpg": "/static/media/FoodApp.aae23842230a038252d5.jpg",
     "index.html": "/index.html",
-    "main.d0b4f15a.js.map": "/static/js/main.d0b4f15a.js.map"
+    "main.949c3e79.js.map": "/static/js/main.949c3e79.js.map"
   },
   "entrypoints": [
-    "static/js/main.d0b4f15a.js"
+    "static/js/main.949c3e79.js"
   ]
 }

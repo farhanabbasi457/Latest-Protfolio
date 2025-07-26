@@ -26,7 +26,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
               Hi, I'm <span className="text-blue-400">Farhan</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 min-h-[70px]">
               <Typewriter
                 words={[
                   'Full Stack JavaScript Developer',

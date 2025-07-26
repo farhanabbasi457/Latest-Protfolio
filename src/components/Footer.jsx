@@ -31,7 +31,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl font-bold text-white mb-4">Muhammad Farhan</h2>
-            <p className="mb-4">Frontend Developer creating modern web experiences.</p>
+            <p className="mb-4">Full Stack JavaScript Developer creating modern web experiences.</p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
                 <motion.a

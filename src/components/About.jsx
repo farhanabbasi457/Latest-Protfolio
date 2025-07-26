@@ -7,7 +7,7 @@ const About = () => {
   const aboutInfo = [
     { label: 'Name', value: 'Muhammad Farhan' },
     { label: 'Email', value: 'mfarhanabbasi99@gmail.com' },
-    { label: 'From', value: 'Islamabad ,Pakistan' },
+    { label: 'From', value: 'Bharakahu ,Islamabad ,Pakistan' },
     { label: 'Experience', value: '2+ Years' },
   ];
 

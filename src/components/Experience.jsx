@@ -19,7 +19,7 @@ const Experience = () => {
   const education = [
     {
       id: 1,
-      degree: "B.Sc. Computer Science",
+      degree: "Bachelor of Science in Computer Science",
       institution: "Arid Agriculture University, Rawalpindi, Pakistan",
       duration: "2021 - 2025",
     },
@@ -44,7 +44,7 @@ const Experience = () => {
       name: "Computer Course",
       issuer: "Development Center Bharakahu, Islamabad, Pakistan",
       date: "Mar 2019 - Aug 2019",
-      description: "Mastered Microsoft Office Suite including Word, Excel & PowerPoint,"
+      description: "Mastered Microsoft Office Suite including Word, Excel & PowerPoint."
     },
     {
       id: 2,

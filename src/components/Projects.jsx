@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import Billing from '../Pictures/Projects/BillingDesktopApp.png';
-import BookApp from '../Pictures/Projects/BookApp.png';
-import FoodApp from '../Pictures/Projects/FoodApp.png';
-import Mintronix from '../Pictures/Projects/Minitronix.png';
-import Netflix from '../Pictures/Projects/Netflix.png';
-import UiitLabXperts from '../Pictures/Projects/UIITLabXperts.png';
+import Billing from '../Pictures/Projects/BillingDesktopApp.jpg';
+import BookApp from '../Pictures/Projects/BookApp.jpg';
+import FoodApp from '../Pictures/Projects/FoodApp.jpg';
+import Mintronix from '../Pictures/Projects/Minitronix.jpg';
+import Netflix from '../Pictures/Projects/Netflix.jpg';
+import UiitLabXperts from '../Pictures/Projects/UIITLabXperts.jpg';
 
 const Projects = () => {
   const [ShowProject, setShowProject] = useState(false);
@@ -68,19 +68,21 @@ const Projects = () => {
     }
   ];
 
+  
+
   return (
     <>
       <div id="projects" className='w-full h-8'></div>
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12"
+            className="text-3xl md:text-4xl font-bold text-center text-white mb-12"
           >
-            My <span className="text-blue-600 dark:text-blue-400">Projects</span>
+            My <span className="text-blue-400">Projects</span>
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -92,7 +94,7 @@ const Projects = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10 }}
-                className={`bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ${project.id > 3 && !ShowProject ? 'hidden' : 'block'}`}
+                className={`bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ${project.id > 3 && !ShowProject ? 'hidden' : 'block'}`}
               >
                 <div className="h-48 overflow-hidden">
                   <img
@@ -102,17 +104,17 @@ const Projects = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  <p className="text-gray-300 mb-4">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full"
+                        className="px-3 py-1 bg-blue-900 text-blue-200 text-xs rounded-full"
                       >
                         {tag}
                       </span>
@@ -125,7 +127,7 @@ const Projects = () => {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                          className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
                         >
                           <FiGithub className="mr-2" /> Code
                         </a>
@@ -137,7 +139,7 @@ const Projects = () => {
                           href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                          className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
                         >
                           <FiExternalLink className="mr-2" /> Live Demo
                         </a>

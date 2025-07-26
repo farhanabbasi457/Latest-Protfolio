@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaBriefcase, FaGraduationCap, FaCode } from 'react-icons/fa';
 
@@ -64,140 +64,140 @@ const Experience = () => {
 
   return (
     <>
-    <div id="experience" className='w-full h-8'></div>
-    <section  className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12"
-        >
-          My <span className="text-blue-600 dark:text-blue-400">Experience</span>
-        </motion.h2>
-
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Education & Certifications */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+      <div id="experience" className='w-full h-8'></div>
+      <section className="py-20 bg-gray-800">
+        <div className="container mx-auto px-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="lg:w-1/2"
+            className="text-3xl md:text-4xl font-bold text-center text-white mb-12"
           >
-            {/* Education */}
-            <div className="flex items-center mb-6">
-              <div className="p-3 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full mr-4">
-                <FaGraduationCap size={24} />
+            My <span className="text-blue-400">Experience</span>
+          </motion.h2>
+
+          <div className="flex flex-col lg:flex-row gap-12">
+            {/* Education & Certifications */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="lg:w-1/2"
+            >
+              {/* Education */}
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-green-900 text-green-300 rounded-full mr-4">
+                  <FaGraduationCap size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Education</h3>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white">Education</h3>
-            </div>
 
-            <div className="space-y-8 mb-12">
-              {education.map((edu) => (
-                <motion.div
-                  key={edu.id}
-                  whileHover={{ scale: 1.02 }}
-                  className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md"
-                >
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="text-xl font-bold text-gray-800 dark:text-white">{edu.degree}</h4>
-                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
-                      {edu.duration}
-                    </span>
-                  </div>
-                  <h5 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-3">{edu.institution}</h5>
-                </motion.div>
-              ))}
-            </div>
-
-
-          </motion.div>
-
-          {/* Work Experience */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="lg:w-1/2"
-          >
-            <div className="flex items-center mb-6">
-              <div className="p-3 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full mr-4">
-                <FaBriefcase size={24} />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white">Work Experience</h3>
-            </div>
-
-            <div className="space-y-8">
-              {workExperience.map((exp) => (
-                <motion.div
-                  key={exp.id}
-                  whileHover={{ scale: 1.02 }}
-                  className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md"
-                >
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="text-xl font-bold text-gray-800 dark:text-white">{exp.role}</h4>
-                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
-                      {exp.duration}
-                    </span>
-                  </div>
-                  <h5 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-3">{exp.company}</h5>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{exp.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {exp.skills.map((skill, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-200 text-xs rounded-full"
-                      >
-                        {skill}
+              <div className="space-y-8 mb-12">
+                {education.map((edu) => (
+                  <motion.div
+                    key={edu.id}
+                    whileHover={{ scale: 1.02 }}
+                    className="bg-gray-700 p-6 rounded-xl shadow-md"
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="text-xl font-bold text-white">{edu.degree}</h4>
+                      <span className="px-3 py-1 bg-green-900 text-green-200 text-sm rounded-full">
+                        {edu.duration}
                       </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Certifications */}
-            <div className="flex items-center mb-6 mt-4">
-              <div className="p-3 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full mr-4">
-                <FaCode size={24} />
+                    </div>
+                    <h5 className="text-lg font-semibold text-green-400 mb-3">{edu.institution}</h5>
+                  </motion.div>
+                ))}
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white">Certifications</h3>
-            </div>
 
-            <div className="space-y-8">
-              {certifications.map((cert) => (
-                <motion.div
-                  key={cert.id}
-                  whileHover={{ scale: 1.02 }}
-                  className={`bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md ${cert.id>1 && !showCertificate?'hidden':'block'}`}
-                >
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="text-xl font-bold text-gray-800 dark:text-white">{cert.name}</h4>
-                    <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full">
-                      {cert.date}
-                    </span>
-                  </div>
-                  <h5 className="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-3">{cert.issuer}</h5>
-                  <p className="text-gray-600 dark:text-gray-300">{cert.description}</p>
-                </motion.div>
-              ))}
-            </div>
-            <motion.a
-              href="#Experience"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              onClick={() => setShowCertificate(!showCertificate)}
-              className="mt-6 inline-block bg-blue-500 text-white dark:text-white p-2 rounded-full hover:p-[12px] hover:transition-all duration-300 ease-in-out cursor-pointer">
+
+            </motion.div>
+
+            {/* Work Experience */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="lg:w-1/2"
+            >
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-blue-900 text-blue-300 rounded-full mr-4">
+                  <FaBriefcase size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Work Experience</h3>
+              </div>
+
+              <div className="space-y-8">
+                {workExperience.map((exp) => (
+                  <motion.div
+                    key={exp.id}
+                    whileHover={{ scale: 1.02 }}
+                    className="bg-gray-700 p-6 rounded-xl shadow-md"
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="text-xl font-bold text-white">{exp.role}</h4>
+                      <span className="px-3 py-1 bg-blue-900 text-blue-200 text-sm rounded-full">
+                        {exp.duration}
+                      </span>
+                    </div>
+                    <h5 className="text-lg font-semibold text-blue-400 mb-3">{exp.company}</h5>
+                    <p className="text-gray-300 mb-4">{exp.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.skills.map((skill, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-gray-600 text-gray-200 text-xs rounded-full"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Certifications */}
+              <div className="flex items-center mb-6 mt-4">
+                <div className="p-3 bg-purple-900 text-purple-300 rounded-full mr-4">
+                  <FaCode size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Certifications</h3>
+              </div>
+
+              <div className="space-y-8">
+                {certifications.map((cert) => (
+                  <motion.div
+                    key={cert.id}
+                    whileHover={{ scale: 1.02 }}
+                    className={`bg-gray-700 p-6 rounded-xl shadow-md ${cert.id > 1 && !showCertificate ? 'hidden' : 'block'}`}
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="text-xl font-bold text-white">{cert.name}</h4>
+                      <span className="px-3 py-1 bg-purple-900 text-purple-200 text-sm rounded-full">
+                        {cert.date}
+                      </span>
+                    </div>
+                    <h5 className="text-lg font-semibold text-purple-400 mb-3">{cert.issuer}</h5>
+                    <p className="text-gray-300">{cert.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+              <motion.a
+                href="#Experience"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                onClick={() => setShowCertificate(!showCertificate)}
+                className="mt-6 inline-block bg-blue-500 text-white p-2 rounded-full hover:p-[12px] hover:transition-all duration-300 ease-in-out cursor-pointer">
                 {showCertificate ? "Minimize" : "Show More"}
               </motion.a>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };

@@ -73,16 +73,16 @@ const Contact = () => {
   return (
     <>
       <div id="contact" className='w-full h-8'></div>
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section className="py-20 bg-gray-800">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12"
+            className="text-3xl md:text-4xl font-bold text-center text-white mb-12"
           >
-            Get In <span className="text-blue-600 dark:text-blue-400">Touch</span>
+            Get In <span className="text-blue-400">Touch</span>
           </motion.h2>
 
           <div className="flex flex-col lg:flex-row gap-12">
@@ -99,20 +99,20 @@ const Contact = () => {
                   <motion.div
                     key={index}
                     whileHover={{ x: 5 }}
-                    className="flex items-start gap-4 bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md"
+                    className="flex items-start gap-4 bg-gray-700 p-6 rounded-lg shadow-md"
                   >
-                    <div className="p-3 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full">
+                    <div className="p-3 bg-blue-900 text-blue-300 rounded-full">
                       {item.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 dark:text-white">
+                      <h3 className="font-semibold text-white">
                         {item.title}
                       </h3>
                       <a
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                        className="text-gray-300 hover:text-blue-400 transition-colors"
                       >
                         {item.content}
                       </a>
@@ -133,13 +133,13 @@ const Contact = () => {
             >
               <form
                 onSubmit={handleSubmit}
-                className="bg-white dark:bg-gray-700 p-6 md:p-8 rounded-xl shadow-md"
+                className="bg-gray-700 p-6 md:p-8 rounded-xl shadow-md"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-gray-700 dark:text-gray-300 mb-2"
+                      className="block text-gray-300 mb-2"
                     >
                       Your Name
                     </label>
@@ -149,14 +149,14 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white"
+                      className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-gray-800 text-white"
                       required
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-gray-700 dark:text-gray-300 mb-2"
+                      className="block text-gray-300 mb-2"
                     >
                       Your Email
                     </label>
@@ -166,7 +166,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white"
+                      className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-gray-800 text-white"
                       required
                     />
                   </div>
@@ -174,7 +174,7 @@ const Contact = () => {
                 <div className="mb-6">
                   <label
                     htmlFor="subject"
-                    className="block text-gray-700 dark:text-gray-300 mb-2"
+                    className="block text-gray-300 mb-2"
                   >
                     Subject
                   </label>
@@ -184,14 +184,14 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-gray-800 text-white"
                     required
                   />
                 </div>
                 <div className="mb-6">
                   <label
                     htmlFor="message"
-                    className="block text-gray-700 dark:text-gray-300 mb-2"
+                    className="block text-gray-300 mb-2"
                   >
                     Your Message
                   </label>
@@ -201,7 +201,7 @@ const Contact = () => {
                     rows="5"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-gray-800 text-white"
                     required
                   ></textarea>
                 </div>

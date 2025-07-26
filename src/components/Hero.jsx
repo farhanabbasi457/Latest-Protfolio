@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
-import Pic from '../Pictures/User/farhan.jpeg';
+import Pic from '../Pictures/User/farhan.jpg';
 import { FaGithub, FaLinkedin, FaPhone, FaInstagram, FaArrowDown } from 'react-icons/fa';
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center  pt-16 pb-10 bg-gradient-to-r from-blue-50 to-green-50 dark:from-gray-800 dark:to-gray-900">
+    <section id="home" className="min-h-screen flex items-center  pt-16 pb-10 bg-gradient-to-r from-gray-800 to-gray-900">
       <div className="container mx-auto px-16">
         <div className="flex flex-col-reverse mt-12 md:mt-8 md:flex-row items-center justify-between">
           {/* Hero Content */}
@@ -23,10 +23,10 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="md:w-1/2 mb-10 md:mb-0"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4">
-              Hi, I'm <span className="text-blue-600 dark:text-blue-400">Farhan</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+              Hi, I'm <span className="text-blue-400">Farhan</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">
               <Typewriter
                 words={[
                   'Full Stack JavaScript Developer',
@@ -45,14 +45,14 @@ const Hero = () => {
                 delaySpeed={1500}
               />
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
+            <p className="text-lg text-gray-300 mb-8 max-w-lg">
               I build exceptional digital experiences with modern web technologies.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <motion.a
                 href="#contact"
-                className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors shadow-lg"
+                className="px-6 py-3 bg-blue-700 text-white font-medium rounded-full transition-colors shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -60,7 +60,7 @@ const Hero = () => {
               </motion.a>
               <motion.a
                 href="#projects"
-                className="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 font-medium rounded-full transition-colors hover:bg-blue-50 dark:hover:bg-gray-800"
+                className="px-6 py-3 border-2  text-blue-400 border-blue-400 font-medium rounded-full transition-colors hover:bg-gray-800"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -98,7 +98,7 @@ const Hero = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="text-gray-300 hover:text-blue-400 transition-colors"
               whileHover={{ y: -5 }}
               whileTap={{ scale: 0.9 }}
             >

@@ -10,7 +10,7 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-    <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div className="bg-gray-900 transition-colors duration-300">
       <Header />
       <main>
         <Hero />

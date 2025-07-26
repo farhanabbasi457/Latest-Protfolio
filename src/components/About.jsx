@@ -14,16 +14,16 @@ const About = () => {
   return (
     <>
       <div id="about" className='w-full h-6'></div>
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12"
+            className="text-3xl md:text-4xl font-bold text-center text-white mb-12"
           >
-            About <span className="text-blue-600 dark:text-blue-400">Me</span>
+            About <span className="text-blue-400">Me</span>
           </motion.h2>
 
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -51,13 +51,13 @@ const About = () => {
               viewport={{ once: true }}
               className="lg:w-2/3"
             >
-              <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
+              <h3 className="text-2xl font-semibold text-white mb-4">
                 Full Stack JavaScript Developer
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-gray-300 mb-4">
                 I'm a dedicated Full Stack JavaScript Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). I build scalable, high-performance web applications with clean, maintainable code. From designing intuitive frontends to developing robust backends and RESTful APIs, I enjoy crafting end-to-end solutions that solve real-world problems.
               </p>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
+              <p className="text-gray-300 mb-6">
                 With a strong foundation in computer science and years of hands-on experience,
                 I bring ideas to life through clean, efficient code and thoughtful design.
               </p>
@@ -68,12 +68,12 @@ const About = () => {
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.02 }}
-                    className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg"
+                    className="bg-gray-800 p-4 rounded-lg"
                   >
-                    <span className="block text-blue-600 dark:text-blue-400 font-medium">
+                    <span className="block text-blue-400 font-medium">
                       {item.label}:
                     </span>
-                    <span className="text-gray-800 dark:text-gray-200">
+                    <span className="text-gray-200">
                       {item.value}
                     </span>
                   </motion.div>
